@@ -205,12 +205,22 @@ def get_documents():
             "documents": documents
         }
 
+    allowed_extensions = [".pdf", ".docx", ".txt"]
+
     for file_name in os.listdir(UPLOAD_DIR):
+        # Skip hidden/system files like .gitkeep, .DS_Store, etc.
+        if file_name.startswith("."):
+            continue
+
         file_path = os.path.join(UPLOAD_DIR, file_name)
 
         if os.path.isfile(file_path):
             file_size = os.path.getsize(file_path)
             file_extension = os.path.splitext(file_name)[1].lower()
+
+            # Only show actual supported document files
+            if file_extension not in allowed_extensions:
+                continue
 
             documents.append({
                 "file_name": file_name,
@@ -222,7 +232,6 @@ def get_documents():
     return {
         "documents": documents
     }
-
 
 @app.delete("/documents/{file_name}")
 def delete_document(file_name: str):
