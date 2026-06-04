@@ -1,0 +1,38 @@
+# Environment variables
+.env
+backend/.env
+
+# Python virtual environment
+venv/
+backend/venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+*.db
+backend/groundedai.db
+
+# ChromaDB vector database
+backend/chroma_db/
+chroma_db/
+
+# Uploaded files
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Build files
+dist/
+frontend/dist/
+
+# Mac system files
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*

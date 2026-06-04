@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+pypdf
+python-docx
+chromadb
+sentence-transformers
+langchain
+langchain-community
+groq
+python-dotenv
+sqlalchemy
+pydantic[email]

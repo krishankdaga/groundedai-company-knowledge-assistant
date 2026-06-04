@@ -1,0 +1,17 @@
+Wohlig Transformations Internship Guide
+
+Office timings for interns are 9:30 AM to 6:30 PM from Monday to Friday.
+
+Interns are expected to report to their assigned mentor every morning.
+
+If an intern is unable to attend office, they must inform their mentor and HR team in advance.
+
+For technical issues, interns should first try to debug the problem, then ask their mentor for help.
+
+All interns must maintain confidentiality of client data and internal project information.
+
+Interns should submit a weekly progress report every Friday before end of day.
+
+Code should be pushed to the assigned GitHub repository with proper commit messages.
+
+Any project escalation should first be discussed with the assigned mentor.
